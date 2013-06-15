@@ -1,0 +1,19 @@
+body {
+    font-size: 24px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+.wrapper {
+    float:left;
+    width: 100%;
+}
+.logo {
+    background-image: url("../images/oggy.jpg");
+    background-repeat: no-repeat;
+    float: left;
+    height: 250px;
+    width: 351px;
+}
+
+.fos_user_registration_form {
+    float: right;
+}

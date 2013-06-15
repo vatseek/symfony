@@ -1,0 +1,31 @@
+_user_bundle:
+    resource: "@UserBundle/Resources/config/routing.yml"
+
+homepage:
+    pattern:   /
+    defaults:  { _controller: AcmeUserBundle:Start:index }
+
+dashboard:
+    pattern:   /dashboard
+    defaults:  { _controller: UserBundle:Start:dashboard }
+
+task:
+    resource:  "@UserBundle/Controller/"
+    type:  annotation
+    prefix:  /
+
+solving:
+    pattern:   /solving
+    defaults:  { _controller: UserBundle:Solving:index }
+
+login:
+    pattern:   /login
+    defaults:  { _controller: FOSUserBundle:Security:login }
+
+registration:
+    pattern:   /register
+    defaults:  { _controller: FOSUserBundle:Registration:register }
+
+logout:
+    pattern:   /logout
+    defaults:  { _controller: FOSUserBundle:Registration:logout }

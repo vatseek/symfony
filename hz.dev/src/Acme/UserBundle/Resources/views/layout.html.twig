@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block stylesheets %}
+        <link href="{{ asset('/bundles/user/css/demo.css') }}" type="text/css" rel="stylesheet" />
+    {% endblock %}
+</head>
+<body>
+{% block body %}
+<div class="wrapper">
+    <div class="logo"></div>
+    {{ block('fos_user_content') }}
+</div>
+{% endblock %}
+</body>
+</html>
