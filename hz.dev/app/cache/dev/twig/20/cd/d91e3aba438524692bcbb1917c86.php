@@ -1,6 +1,6 @@
 <?php
 
-/* @WebProfiler/Collector/exception.html.twig */
+/* WebProfilerBundle:Collector:exception.html.twig */
 class __TwigTemplate_20cdd91e3aba438524692bcbb1917c86 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -31,12 +31,12 @@ class __TwigTemplate_20cdd91e3aba438524692bcbb1917c86 extends Twig_Template
     {
         // line 4
         echo "    ";
-        if ($this->getAttribute($this->getContext($context, "collector"), "hasexception")) {
+        if ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "hasexception")) {
             // line 5
             echo "        <style type=\"text/css\">
             ";
             // line 6
-            echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('routing')->getPath("_profiler_exception_css", array("token" => $this->getContext($context, "token"))));
+            echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('routing')->getPath("_profiler_exception_css", array("token" => (isset($context["token"]) ? $context["token"] : $this->getContext($context, "token")))));
             echo "
         </style>
     ";
@@ -58,7 +58,7 @@ class __TwigTemplate_20cdd91e3aba438524692bcbb1917c86 extends Twig_Template
     <span class=\"count\">
         ";
         // line 17
-        if ($this->getAttribute($this->getContext($context, "collector"), "hasexception")) {
+        if ($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "hasexception")) {
             // line 18
             echo "            <span>1</span>
         ";
@@ -77,7 +77,7 @@ class __TwigTemplate_20cdd91e3aba438524692bcbb1917c86 extends Twig_Template
 
     ";
         // line 27
-        if ((!$this->getAttribute($this->getContext($context, "collector"), "hasexception"))) {
+        if ((!$this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "hasexception"))) {
             // line 28
             echo "        <p>
             <em>No exception was thrown and uncaught during the request.</em>
@@ -88,7 +88,7 @@ class __TwigTemplate_20cdd91e3aba438524692bcbb1917c86 extends Twig_Template
             echo "        <div class=\"sf-reset\">
             ";
             // line 33
-            echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('routing')->getPath("_profiler_exception", array("token" => $this->getContext($context, "token"))));
+            echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('routing')->getPath("_profiler_exception", array("token" => (isset($context["token"]) ? $context["token"] : $this->getContext($context, "token")))));
             echo "
         </div>
     ";
@@ -97,7 +97,7 @@ class __TwigTemplate_20cdd91e3aba438524692bcbb1917c86 extends Twig_Template
 
     public function getTemplateName()
     {
-        return "@WebProfiler/Collector/exception.html.twig";
+        return "WebProfilerBundle:Collector:exception.html.twig";
     }
 
     public function isTraitable()
@@ -107,6 +107,6 @@ class __TwigTemplate_20cdd91e3aba438524692bcbb1917c86 extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  91 => 33,  63 => 18,  385 => 160,  382 => 159,  374 => 157,  367 => 156,  363 => 155,  359 => 153,  357 => 152,  354 => 151,  351 => 150,  349 => 149,  339 => 146,  336 => 145,  330 => 141,  324 => 139,  322 => 138,  317 => 135,  311 => 131,  308 => 130,  303 => 128,  292 => 121,  289 => 120,  286 => 119,  284 => 118,  279 => 115,  277 => 114,  272 => 111,  270 => 110,  265 => 107,  261 => 105,  255 => 103,  249 => 100,  244 => 97,  242 => 96,  237 => 93,  231 => 89,  228 => 88,  225 => 87,  223 => 86,  218 => 83,  212 => 79,  206 => 77,  204 => 76,  199 => 73,  193 => 69,  190 => 68,  187 => 67,  180 => 63,  174 => 59,  171 => 58,  166 => 56,  159 => 53,  151 => 47,  148 => 46,  143 => 43,  140 => 42,  107 => 27,  103 => 25,  100 => 24,  97 => 23,  88 => 32,  82 => 28,  76 => 25,  61 => 17,  39 => 6,  36 => 5,  79 => 18,  72 => 13,  69 => 12,  54 => 22,  47 => 8,  42 => 7,  40 => 11,  37 => 10,  22 => 1,  246 => 32,  164 => 58,  157 => 56,  145 => 46,  139 => 45,  131 => 42,  120 => 40,  115 => 39,  111 => 38,  108 => 37,  106 => 36,  101 => 33,  98 => 32,  92 => 21,  83 => 25,  80 => 27,  74 => 14,  66 => 11,  60 => 6,  55 => 13,  52 => 12,  50 => 14,  41 => 8,  32 => 4,  29 => 6,  409 => 183,  400 => 180,  396 => 179,  393 => 178,  388 => 177,  386 => 176,  378 => 170,  376 => 158,  369 => 165,  362 => 161,  355 => 157,  348 => 153,  341 => 147,  334 => 145,  327 => 140,  312 => 129,  305 => 129,  298 => 125,  293 => 118,  288 => 116,  285 => 115,  276 => 113,  273 => 112,  271 => 111,  262 => 104,  259 => 103,  251 => 101,  248 => 96,  243 => 93,  240 => 92,  235 => 89,  229 => 87,  221 => 85,  219 => 84,  209 => 78,  202 => 75,  195 => 71,  191 => 69,  188 => 68,  185 => 66,  177 => 64,  172 => 62,  168 => 57,  165 => 60,  162 => 54,  156 => 58,  153 => 56,  150 => 55,  147 => 54,  141 => 51,  134 => 47,  130 => 39,  123 => 35,  119 => 40,  116 => 31,  113 => 38,  105 => 34,  102 => 33,  99 => 31,  96 => 31,  90 => 27,  84 => 24,  81 => 23,  73 => 24,  70 => 15,  67 => 20,  64 => 19,  59 => 14,  53 => 12,  45 => 9,  43 => 9,  38 => 6,  35 => 9,  33 => 4,  30 => 3,);
+        return array (  20 => 1,  348 => 322,  346 => 321,  343 => 320,  299 => 278,  297 => 277,  63 => 18,  113 => 40,  65 => 11,  161 => 79,  134 => 61,  100 => 36,  58 => 18,  127 => 28,  110 => 22,  102 => 33,  90 => 37,  76 => 25,  77 => 25,  59 => 22,  53 => 15,  104 => 37,  97 => 37,  81 => 28,  23 => 1,  34 => 5,  480 => 162,  474 => 161,  469 => 158,  461 => 155,  457 => 153,  453 => 151,  444 => 149,  440 => 148,  437 => 147,  435 => 146,  430 => 144,  427 => 143,  423 => 142,  413 => 134,  409 => 132,  407 => 131,  402 => 130,  398 => 129,  393 => 126,  387 => 122,  384 => 121,  381 => 120,  379 => 119,  374 => 116,  368 => 112,  365 => 111,  362 => 110,  360 => 332,  355 => 106,  341 => 105,  337 => 103,  322 => 101,  314 => 99,  312 => 98,  309 => 97,  305 => 95,  298 => 91,  294 => 90,  285 => 89,  283 => 88,  278 => 86,  268 => 85,  264 => 84,  258 => 81,  252 => 80,  247 => 78,  241 => 77,  235 => 74,  229 => 73,  224 => 71,  220 => 70,  214 => 69,  208 => 68,  169 => 60,  143 => 56,  140 => 55,  132 => 51,  128 => 49,  119 => 42,  107 => 36,  71 => 23,  38 => 7,  177 => 65,  165 => 64,  160 => 61,  135 => 47,  126 => 59,  114 => 42,  84 => 27,  70 => 24,  67 => 20,  61 => 17,  28 => 3,  93 => 38,  88 => 32,  78 => 18,  26 => 6,  196 => 90,  183 => 70,  171 => 61,  166 => 71,  163 => 70,  158 => 67,  156 => 58,  151 => 57,  142 => 63,  138 => 62,  136 => 56,  121 => 46,  117 => 19,  105 => 18,  91 => 33,  62 => 24,  49 => 14,  94 => 34,  89 => 30,  85 => 23,  75 => 28,  68 => 12,  56 => 16,  27 => 7,  24 => 3,  87 => 32,  46 => 13,  44 => 10,  31 => 4,  25 => 35,  21 => 2,  19 => 1,  79 => 29,  72 => 27,  69 => 26,  47 => 11,  40 => 8,  37 => 7,  22 => 2,  246 => 32,  157 => 56,  145 => 46,  139 => 50,  131 => 42,  123 => 47,  120 => 20,  115 => 43,  111 => 37,  108 => 47,  101 => 43,  98 => 34,  96 => 30,  83 => 31,  74 => 14,  66 => 25,  55 => 13,  52 => 12,  50 => 15,  43 => 11,  41 => 10,  35 => 6,  32 => 7,  29 => 3,  209 => 82,  203 => 78,  199 => 67,  193 => 73,  189 => 71,  187 => 84,  182 => 66,  176 => 64,  173 => 74,  168 => 66,  164 => 59,  162 => 62,  154 => 54,  149 => 51,  147 => 58,  144 => 53,  141 => 51,  133 => 55,  130 => 60,  125 => 44,  122 => 43,  116 => 36,  112 => 47,  109 => 45,  106 => 36,  103 => 37,  99 => 30,  95 => 39,  92 => 28,  86 => 28,  82 => 28,  80 => 27,  73 => 24,  64 => 21,  60 => 20,  57 => 16,  54 => 19,  51 => 13,  48 => 16,  45 => 9,  42 => 11,  39 => 6,  36 => 5,  33 => 4,  30 => 3,);
     }
 }
