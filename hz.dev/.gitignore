@@ -1,0 +1,11 @@
+app/bootstrap*
+.idea/
+# Symfony directories
+vendor/*
+*/logs/*
+*/cache/*
+web/uploads/*
+web/bundles/*
+bin/*
+composer.lock
+composer.phar
